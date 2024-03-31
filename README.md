@@ -3,8 +3,8 @@ Powershell skript pro vytvoření OU, skupin, uživatelů a přidání vytvořen
 
 ## Atributy  csv souborů
 ### OU.csv
-- **OUJmeno** - jméno OU, která bude vytvořena
-- **cestaOU** - cesta kam bude OU vytvořena počínaje nejnižsí úrovní v hierarchii
+- **<u>OUJmeno</u>** - jméno OU, která bude vytvořena
+- **<u>cestaOU</u>** - cesta kam bude OU vytvořena počínaje nejnižsí úrovní v hierarchii
 
 <pre>
 └── domena.local
@@ -21,10 +21,10 @@ Powershell skript pro vytvoření OU, skupin, uživatelů a přidání vytvořen
 ***Pokud budeme chtít vytvořit OU přímo pod domena.local (jako OU Firma), použijeme pouze DC=domena,DC=local.***
 
 ### skupiny.csv
-- **jmenoSkupiny** - jméno skupiny, která bude vytvořena
-- **typSkupiny** - hodnota Security nebo 1 pro skupinu se zabezpečením, hodnota Distributed nebo 0 pro skupinu distribuční
-- **rozsah** - hodnota DomainLocal nebo 0 pro místní doménovou skupinu, hodnota Global nebo 1 pro globální skupinu, hodnota Universal nebo 2 pro univerzální skupinu
-- **cestaSkupiny** - stejné jako u OU
+- **<u>jmenoSkupiny</u>** - jméno skupiny, která bude vytvořena
+- **<u>typSkupiny</u>** - hodnota Security nebo 1 pro skupinu se zabezpečením, hodnota Distributed nebo 0 pro skupinu distribuční
+- **<u>rozsah</u>** - hodnota DomainLocal nebo 0 pro místní doménovou skupinu, hodnota Global nebo 1 pro globální skupinu, hodnota Universal nebo 2 pro univerzální skupinu
+- **<u>cestaSkupiny</u>** - stejné jako u OU
 
 <pre>
 └── domena.local
@@ -41,13 +41,13 @@ Powershell skript pro vytvoření OU, skupin, uživatelů a přidání vytvořen
 ***Pokud budeme chtít do struktury výše vytvořit do OU IT skupinu IT_skupina, tak hodnota atributu cestaSkupiny použijeme OU=IT,OU=Firma,DC=domena,DC=local.***
 
 ### uzivatele.csv
-- **jmeno** - křestní jméno uživatele
-- **prijmeni** - příjmení uživatele
-- **login** - přihlašovací jméno uživatele, **nutné použít u -SamAccountName ve skriptu, aby se uživatel mohl přihlásit k počítači**
-- **email** - email uživatele
-- **heslo** - defaultní heslo uživatele
-- **ou** - stejné jako u OU
-- **skupina** - název skupiny, kam bude uživatel umístěn
+- **<u>jmeno</u>** - křestní jméno uživatele
+- **<u>prijmeni</u>** - příjmení uživatele
+- **<u>login</u>** - přihlašovací jméno uživatele, **nutné použít u -SamAccountName ve skriptu, aby se uživatel mohl přihlásit k počítači**
+- **<u>email</u>** - email uživatele
+- **<u>heslo</u>** - defaultní heslo uživatele
+- **<u>ou</u>** - stejné jako u OU
+- **<u>skupina</u>** - název skupiny, kam bude uživatel umístěn
 
 <pre>
 └── domena.local
